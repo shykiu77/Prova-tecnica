@@ -12,6 +12,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { HomeComponent } from './components/views/home/home.component';
 import { ClientesComponent } from './components/views/clientes/clientes.component';
 import { FavoritosComponent } from './components/views/favoritos/favoritos.component';
+import { FooterComponent } from './components/template/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FavoritosComponent } from './components/views/favoritos/favoritos.compo
     HeaderComponent,
     HomeComponent,
     ClientesComponent,
-    FavoritosComponent
+    FavoritosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
