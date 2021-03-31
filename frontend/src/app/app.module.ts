@@ -9,11 +9,17 @@ import {MatListModule} from '@angular/material/list';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { HeaderComponent } from './components/template/header/header.component';
 import {MatIconModule} from '@angular/material/icon';
+import { HomeComponent } from './components/views/home/home.component';
+import { ClientesComponent } from './components/views/clientes/clientes.component';
+import { FavoritosComponent } from './components/views/favoritos/favoritos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent,
+    ClientesComponent,
+    FavoritosComponent
   ],
   imports: [
     BrowserModule,
