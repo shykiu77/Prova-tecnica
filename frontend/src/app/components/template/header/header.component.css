@@ -1,0 +1,23 @@
+.list-item {
+    cursor: pointer; 
+    display: flex;
+    flex-direction: row;   
+    color: white;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+}
+
+.list-item:hover > .icon{
+    color: #ffd600;
+}
+
+.green > .icon {
+    color: #64dd17;
+}
