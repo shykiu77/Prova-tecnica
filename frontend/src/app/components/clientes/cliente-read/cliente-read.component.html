@@ -1,4 +1,4 @@
-<button mat-raised-button (click)="click()">
+<button mat-raised-button (click)="create()">
     Adicionar Cliente
 </button>
 
@@ -45,7 +45,10 @@
             <a routerLink="/clientes/delete/{{ element.id }}" class="delete">
                 <mat-icon>delete</mat-icon>
             </a>
-            
+            <a (click)="toggleFavorite(element)">
+                <mat-icon class="favorite" *ngIf="!element.favorite">favorite_border</mat-icon>
+                <mat-icon class="favorite" *ngIf="element.favorite">favorite</mat-icon>
+            </a>
         </td>
     </ng-container>
 

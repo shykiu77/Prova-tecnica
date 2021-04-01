@@ -22,8 +22,14 @@ export class ClienteReadComponent implements OnInit {
    })
   }
 
-  click(): void {
+  create(): void {
     this.router.navigate(['clientes/create'])
+  }
+
+  toggleFavorite(cliente: Cliente): void {
+    console.log(cliente.favorite)
+    cliente.favorite = !cliente.favorite
+    this.ClientesService.update(cliente).subscribe( () => {})
   }
 
 }

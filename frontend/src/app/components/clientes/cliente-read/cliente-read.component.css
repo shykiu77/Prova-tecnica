@@ -17,3 +17,7 @@ button {
 .delete > mat-icon {
     color: #e35e6b;
 }
+
+.favorite {
+    cursor: pointer;
+}
