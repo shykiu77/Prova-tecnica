@@ -1,3 +1,4 @@
+import { ClienteCreateComponent } from './components/clientes/cliente-create/cliente-create.component';
 import { FavoritosComponent } from './components/views/favoritos/favoritos.component';
 import { ClientesComponent } from './components/views/clientes/clientes.component';
 import { HomeComponent } from './components/views/home/home.component';
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: "favoritos",
     component: FavoritosComponent
+  },
+  {
+    path: "clientes/create",
+    component: ClienteCreateComponent
   }
 ];
 

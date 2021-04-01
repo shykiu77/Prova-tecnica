@@ -16,6 +16,13 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { ClienteReadComponent } from './components/clientes/cliente-read/cliente-read.component';
 import { MatTableModule } from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
+import { ClienteCreateComponent } from './components/clientes/cliente-create/cliente-create.component';
+import { MatCardModule } from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
+import { ClienteUpdateComponent } from './components/clientes/cliente-update/cliente-update.component';
+import { ClienteDeleteComponent } from './components/clientes/cliente-delete/cliente-delete.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +32,10 @@ import { HttpClientModule } from '@angular/common/http';
     ClientesComponent,
     FavoritosComponent,
     FooterComponent,
-    ClienteReadComponent
+    ClienteReadComponent,
+    ClienteCreateComponent,
+    ClienteUpdateComponent,
+    ClienteDeleteComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +45,11 @@ import { HttpClientModule } from '@angular/common/http';
     MatToolbarModule,
     MatIconModule,
     HttpClientModule,
-    MatTableModule
+    MatTableModule,
+    MatCardModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
