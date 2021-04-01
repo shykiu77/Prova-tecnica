@@ -7,7 +7,8 @@
       "dat_nasc": "1992-07-04T00:00:00",
       "email": "bruna@email.com",
       "phone": "79997722214",
-      "id": 1
+      "id": 1,
+      "favorite": false
     },
     {
       "cpf": "41338996959",
@@ -16,7 +17,8 @@
       "dat_nasc": "1980-02-21T00:00:00",
       "email": "joao@email.com",
       "phone": "79982120227",
-      "id": 2
+      "id": 2,
+      "favorite": false
     },
     {
       "cpf": "13683641797",
@@ -25,7 +27,8 @@
       "dat_nasc": "1987-11-21T00:00:00",
       "email": "eduarda@email.com",
       "phone": "84996355327",
-      "id": 3
+      "id": 3,
+      "favorite": false
     }
   ]
 }

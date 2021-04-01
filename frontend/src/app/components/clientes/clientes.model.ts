@@ -6,4 +6,5 @@ export interface Cliente{
     dat_nasc: string
     email: string
     phone: string
+    favorite: boolean
 }
