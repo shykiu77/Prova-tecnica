@@ -20,6 +20,7 @@ import { ClienteCreateComponent } from './components/clientes/cliente-create/cli
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { ClienteUpdateComponent } from './components/clientes/cliente-update/cliente-update.component';
 import { ClienteDeleteComponent } from './components/clientes/cliente-delete/cliente-delete.component';
@@ -49,7 +50,8 @@ import { ClienteDeleteComponent } from './components/clientes/cliente-delete/cli
     MatCardModule,
     FormsModule,
     MatFormFieldModule,
-    MatButtonModule
+    MatButtonModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

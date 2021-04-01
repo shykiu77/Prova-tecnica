@@ -39,16 +39,6 @@
       "phone": "79999338838",
       "favorite": false,
       "id": 4
-    },
-    {
-      "cpf": "",
-      "nome": "",
-      "sexo": "",
-      "dat_nasc": "",
-      "email": "",
-      "phone": "",
-      "favorite": false,
-      "id": 5
     }
   ]
 }

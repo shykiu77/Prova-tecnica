@@ -1,1 +1,36 @@
-<p>cliente-delete works!</p>
+<mat-card>
+    <mat-card-title> Deletar Cliente</mat-card-title>
+    <form>
+
+        <mat-form-field>
+            <input matInput placeholder="Cpf" [(ngModel)]="cliente.cpf" name="cpf" [readonly]=true>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="cliente.nome" name="nome" [readonly]=true>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Sexo" [(ngModel)]="cliente.sexo" name="sexo" [readonly]=true>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Data de Nascimento" [(ngModel)]="cliente.dat_nasc" name="dat_nasc" [readonly]=true>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="E-mail" [(ngModel)]="cliente.email" name="email" [readonly]=true>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Telefone" [(ngModel)]="cliente.phone" name="phone" [readonly]=true>
+        </mat-form-field>
+
+    </form>
+    <button mat-raised-button color="warn" (click)="deletar()">
+        Deletar
+    </button>
+    <button mat-raised-button (click)="cancelar()">
+        Cancelar
+    </button>
+</mat-card>

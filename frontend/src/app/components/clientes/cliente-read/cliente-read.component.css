@@ -10,3 +10,10 @@ button {
     padding: 10px;
 }
 
+.edit > mat-icon {
+    color: #d9cd26;
+}
+
+.delete > mat-icon {
+    color: #e35e6b;
+}
