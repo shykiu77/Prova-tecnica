@@ -5,14 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {MatListModule} from '@angular/material/list';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { HeaderComponent } from './components/template/header/header.component';
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { HomeComponent } from './components/views/home/home.component';
 import { ClientesComponent } from './components/views/clientes/clientes.component';
 import { FavoritosComponent } from './components/views/favoritos/favoritos.component';
 import { FooterComponent } from './components/template/footer/footer.component';
+import { ClienteReadComponent } from './components/clientes/cliente-read/cliente-read.component';
+import { MatTableModule } from '@angular/material/table';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import { FooterComponent } from './components/template/footer/footer.component';
     HomeComponent,
     ClientesComponent,
     FavoritosComponent,
-    FooterComponent
+    FooterComponent,
+    ClienteReadComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,9 @@ import { FooterComponent } from './components/template/footer/footer.component';
     BrowserAnimationsModule,
     MatListModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
