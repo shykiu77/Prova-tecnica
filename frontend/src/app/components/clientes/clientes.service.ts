@@ -8,16 +8,21 @@ import { Observable } from 'rxjs';
 })
 export class ClientesService {
 
-  baseUrl =  "http://localhost:3001/clientes"
+  baseUrl = "http://localhost:3001/clientes"
 
   constructor(private http: HttpClient) { }
 
   create(cliente: Cliente): Observable<Cliente> {
-    return this.http.post<Cliente>(this.baseUrl,cliente)
+    return this.http.post<Cliente>(this.baseUrl, cliente)
   }
 
-  read() : Observable<Cliente[]> {
+  read(): Observable<Cliente[]> {
     return this.http.get<Cliente[]>(this.baseUrl)
+  }
+
+  readFavorites(): Observable<Cliente[]> {
+    const url = `${this.baseUrl}?favorite=true`
+    return this.http.get<Cliente[]>(url)
   }
 
   readById(id: string): Observable<Cliente> {
@@ -27,7 +32,7 @@ export class ClientesService {
 
   update(cliente: Cliente): Observable<Cliente> {
     const url = `${this.baseUrl}/${cliente.id}`
-    return this.http.put<Cliente>(url,cliente)
+    return this.http.put<Cliente>(url, cliente)
   }
 
   delete(id: string): Observable<Cliente> {
