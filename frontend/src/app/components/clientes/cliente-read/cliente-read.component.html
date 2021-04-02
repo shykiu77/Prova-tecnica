@@ -4,7 +4,7 @@
 
 
 
-<table mat-table [dataSource]="clientes" class="mat-elevation-z4">
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z4">
 
     <ng-container matColumnDef="cpf">
         <th mat-header-cell *matHeaderCellDef> Cpf </th>
@@ -59,3 +59,4 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 
 </table>
+<mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>

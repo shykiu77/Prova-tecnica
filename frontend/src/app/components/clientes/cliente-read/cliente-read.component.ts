@@ -3,7 +3,8 @@ import { ClientesService } from './../clientes.service';
 import { Component, Inject, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { MatTable } from '@angular/material/table';
+import { MatTable, MatTableDataSource } from '@angular/material/table';
+import { MatPaginator } from '@angular/material/paginator';
 
 @Component({
   selector: 'app-cliente-read',
@@ -15,16 +16,23 @@ export class ClienteReadComponent implements OnInit {
   @ViewChild(MatTable)
   table!: MatTable<any>
 
+  @ViewChild(MatPaginator)
+  paginator!: MatPaginator;
+
   clientes: Cliente[] = []
   displayedColumns: string[] = ['cpf','nome','sexo','dat_nasc','email','phone','action']
-
+  dataSource!: MatTableDataSource<Cliente>
 
   constructor(private ClientesService: ClientesService,private router: Router,public dialog: MatDialog) { }
 
   ngOnInit(): void {
    this.ClientesService.read().subscribe(clientes => {
      this.clientes = clientes
+     this.dataSource = new MatTableDataSource<Cliente>(this.clientes)
+     this.dataSource.paginator = this.paginator;
    })
+   
+   
   }
 
   create(): void {
@@ -45,6 +53,7 @@ export class ClienteReadComponent implements OnInit {
     dialogRef.afterClosed().subscribe( result => {
       if(result === true){
         this.clientes = this.clientes.filter(clientes => clientes !== cliente)
+        this.dataSource = new MatTableDataSource<Cliente>(this.clientes)
         this.table.renderRows()
       }
     })
