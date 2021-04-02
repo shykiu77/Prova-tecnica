@@ -26,6 +26,8 @@ import { ClienteUpdateComponent } from './components/clientes/cliente-update/cli
 import { ClienteDeleteComponent } from './components/clientes/cliente-delete/cliente-delete.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -56,9 +58,13 @@ import { MatSelectModule } from '@angular/material/select';
     MatButtonModule,
     MatInputModule,
     MatDialogModule,
-    MatSelectModule
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
-  providers: [],
+  providers: [
+    MatDatepickerModule,
+    MatNativeDateModule  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
