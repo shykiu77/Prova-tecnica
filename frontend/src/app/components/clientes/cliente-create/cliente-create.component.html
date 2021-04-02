@@ -11,7 +11,11 @@
         </mat-form-field>
 
         <mat-form-field>
-            <input matInput placeholder="Sexo" [(ngModel)]="cliente.sexo" name="sexo">
+            <mat-label>Select an option</mat-label>
+            <mat-select [(value)]="cliente.sexo">
+                <mat-option value="M">M</mat-option>
+                <mat-option value="F">F</mat-option>
+            </mat-select>
         </mat-form-field>
 
         <mat-form-field>

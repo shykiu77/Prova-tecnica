@@ -28,6 +28,7 @@ export class ClienteCreateComponent implements OnInit {
   }
 
   salvar(): void {
+    console.log(this.cliente.sexo)
     this.ClientesService.create(this.cliente).subscribe( () => {
       this.router.navigate(['clientes'])
     })

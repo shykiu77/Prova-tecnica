@@ -25,6 +25,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { ClienteUpdateComponent } from './components/clientes/cliente-update/cliente-update.component';
 import { ClienteDeleteComponent } from './components/clientes/cliente-delete/cliente-delete.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatFormFieldModule,
     MatButtonModule,
     MatInputModule,
-    MatDialogModule
+    MatDialogModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
