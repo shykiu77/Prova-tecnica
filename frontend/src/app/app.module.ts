@@ -13,7 +13,7 @@ import { HomeComponent } from './components/views/home/home.component';
 import { ClientesComponent } from './components/views/clientes/clientes.component';
 import { FavoritosComponent } from './components/views/favoritos/favoritos.component';
 import { FooterComponent } from './components/template/footer/footer.component';
-import { ClienteReadComponent } from './components/clientes/cliente-read/cliente-read.component';
+import { ClientDeleteDialogComponent, ClienteReadComponent } from './components/clientes/cliente-read/cliente-read.component';
 import { MatTableModule } from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
 import { ClienteCreateComponent } from './components/clientes/cliente-create/cliente-create.component';
@@ -24,6 +24,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { ClienteUpdateComponent } from './components/clientes/cliente-update/cliente-update.component';
 import { ClienteDeleteComponent } from './components/clientes/cliente-delete/cliente-delete.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ClienteDeleteComponent } from './components/clientes/cliente-delete/cli
     ClienteReadComponent,
     ClienteCreateComponent,
     ClienteUpdateComponent,
-    ClienteDeleteComponent
+    ClienteDeleteComponent,
+    ClientDeleteDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +53,8 @@ import { ClienteDeleteComponent } from './components/clientes/cliente-delete/cli
     FormsModule,
     MatFormFieldModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
