@@ -18,7 +18,7 @@
       "email": "eduarda@email.com",
       "phone": "84996355327",
       "id": 3,
-      "favorite": false
+      "favorite": true
     },
     {
       "cpf": "05263398530",
@@ -27,8 +27,38 @@
       "dat_nasc": "22/07/1999",
       "email": "carlosgabrielsns@gmail.com",
       "phone": "79999338838",
-      "favorite": false,
+      "favorite": true,
       "id": 4
+    },
+    {
+      "cpf": "a",
+      "nome": "a",
+      "sexo": "M",
+      "dat_nasc": "2021-04-14T03:00:00.000Z",
+      "email": "a",
+      "phone": "a",
+      "favorite": true,
+      "id": 5
+    },
+    {
+      "cpf": "b",
+      "nome": "b",
+      "sexo": "M",
+      "dat_nasc": "2021-04-13T03:00:00.000Z",
+      "email": "b",
+      "phone": "b",
+      "favorite": true,
+      "id": 6
+    },
+    {
+      "cpf": "c",
+      "nome": "c",
+      "sexo": "M",
+      "dat_nasc": "2021-04-27T03:00:00.000Z",
+      "email": "c",
+      "phone": "c",
+      "favorite": true,
+      "id": 7
     }
   ]
 }
