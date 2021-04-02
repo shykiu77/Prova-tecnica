@@ -36,6 +36,7 @@ export class FavoritosComponent implements OnInit {
     cliente.favorite = !cliente.favorite
     this.ClientesService.update(cliente).subscribe(() => {
       this.clientes = this.clientes.filter(clientes => clientes !== cliente)
+      this.dataSource = new MatTableDataSource<Cliente>(this.clientes)
       this.table.renderRows()
     })
 

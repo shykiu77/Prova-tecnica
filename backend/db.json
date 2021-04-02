@@ -37,7 +37,7 @@
       "dat_nasc": "2021-04-14T03:00:00.000Z",
       "email": "a",
       "phone": "a",
-      "favorite": true,
+      "favorite": false,
       "id": 5
     },
     {
@@ -47,7 +47,7 @@
       "dat_nasc": "2021-04-13T03:00:00.000Z",
       "email": "b",
       "phone": "b",
-      "favorite": true,
+      "favorite": false,
       "id": 6
     },
     {
@@ -57,7 +57,7 @@
       "dat_nasc": "2021-04-27T03:00:00.000Z",
       "email": "c",
       "phone": "c",
-      "favorite": true,
+      "favorite": false,
       "id": 7
     }
   ]
